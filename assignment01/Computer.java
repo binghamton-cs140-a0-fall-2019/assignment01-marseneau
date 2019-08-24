@@ -1,5 +1,4 @@
 package assignment01;
-//test
 /**
  * Class to store information about a personal computer with the
  * basic information stored in an advertisement for a computer.
