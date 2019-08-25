@@ -1,0 +1,6 @@
+
+TESTS FOR Computer.java:
+Dell, Intel i5, 8GB Memory, 2.0TB Solid State Drive, Price: $700.00 
+Dell, Intel i3, 8GB Memory, 2.0TB Hard Drive, Price: $500.00 
+Lenovo, Intel i3, 8GB Memory, 500GB Solid State Drive, Price: $450.00 
+Lenovo, Intel i5, 8GB Memory, 500GB Hard Drive, Price: $600.00 

@@ -1,5 +1,4 @@
 package assignment01;
-//test
 /**
  * SORRY: I did not have time for the javadocs
  * @author CS 140
