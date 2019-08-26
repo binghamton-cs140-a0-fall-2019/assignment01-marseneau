@@ -62,7 +62,6 @@ public class Person {
 		return String.format("%03d-%02d-%04d", ssn/1000000,ssn%1000000/10000, ssn%10000); 
 
 	}
-// TODO provide the getter methods for placeDob and address
 	//Get methods for address and place/DOB
 	public DateAndPlaceOfBirth getPlaceDOB()
 	{
@@ -74,7 +73,6 @@ public class Person {
 		return address;
 	}
 
-// TODO Override the public String toString() method that is similar to the 
 // toString of the StreetUSAddress class and will print a person as:
 // Jane Doe (111-22-3333), 
 // Date and place of birth: 1999-04-23, Springfield, CA, USA
@@ -83,12 +81,8 @@ public class Person {
 // Binghamton, NY 13905
 @Override
 public String toString() {
-	//Break up the string into three different strings, putting dashes in between
+	//Break up the ssn into three different numbers, putting dashes in between
 	//Beginning of the string format translates to what you see in the output
-	return String.format("%s %s %s");
-	//firstNames + ' ' + lastNames + ' ' + '(' + ssn + ')' + "\n"
-	//+ placeDob + '\n' + address; 
-	//String.format("%s\n%s\n%s, %s%s", firstNames, lastNames, ssn, placeDob, address);
-	
+	return String.format("%s %s (%03d-%02d-%04d) \n%s \n%s", firstNames, lastNames, ssn/1000000, (ssn%1000000)/10000, ssn%10000, placeDob, address);
 }
 }

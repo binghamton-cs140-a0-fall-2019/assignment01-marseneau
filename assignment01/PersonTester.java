@@ -24,6 +24,25 @@ public class PersonTester
         //Print the person
         System.out.println(person1);
 
-        //TODO make output go to file
+        //Output works, send it to the output file
+        try(var output =new PrintWriter(new FileOutputStream(
+            new File("output.txt"), true ))) {
+        output.println("\nTESTS FOR Person.java:");
+        
+        DateAndPlaceOfBirth placeDOB2 = new DateAndPlaceOfBirth(1999, 1, 13, "Belgrade", "Serbia");
+
+        StreetUSAddress address2 = new StreetUSAddress("125 Main Street", "Apartment 7", "Whitney Point", "NY", "13862");
+
+        //Create a person
+        Person person12 = new Person("John", "Doe", "123-44-5678", placeDOB2, address2);
+
+        //Print the person
+        output.println(person12);
+
+
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+
     }
 }

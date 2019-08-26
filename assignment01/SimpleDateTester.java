@@ -24,6 +24,31 @@ public class SimpleDateTester
         System.out.println(date1.before(date5));
         System.out.println(date3.before(date1));
 
+        //Output in terminal looks good, send it to the output file
+        try(var output =new PrintWriter(new FileOutputStream(
+            new File("output.txt"), true ))) {
+        output.println("\nTESTS FOR SimpleDate.java:");
+        
+        //Object tests sent to output.txt
+        SimpleDate date12 = SimpleDate.of(2000, 11, 20);
+        SimpleDate date22 = SimpleDate.of(1999, 11, 18);
+        SimpleDate date32 = SimpleDate.of(2000, 10, 18);
+        SimpleDate date42 = SimpleDate.of(2000, 11, 23);
+        SimpleDate date52 = SimpleDate.of(2003, 2, 5);
+
+        //Test the before method
+        output.println(date12.before(date22));
+        output.println(date12.before(date32));
+        output.println(date12.before(date42));
+        output.println(date12.before(date52));
+        output.println(date32.before(date12));
+
+
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+
+
 
     }
 }
