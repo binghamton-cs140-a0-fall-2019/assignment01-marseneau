@@ -8,7 +8,7 @@ public class SimpleDate {
     //Construct a SimpleDate object
     public static SimpleDate  of(int yr, int m, int d)
     {
-        var returnValue = new SimpleDate();
+        SimpleDate returnValue = new SimpleDate();
 
         returnValue.year = yr;
         returnValue.month = m;

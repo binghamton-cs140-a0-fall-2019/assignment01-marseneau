@@ -83,8 +83,11 @@ public class Person {
 // Binghamton, NY 13905
 @Override
 public String toString() {
-	return firstNames + ' ' + lastNames + ' ' + '(' + ssn + ')' + "\n"
-	+ placeDob + '\n' + address; 
+	//Break up the string into three different strings, putting dashes in between
+	//Beginning of the string format translates to what you see in the output
+	return String.format("%s %s %s");
+	//firstNames + ' ' + lastNames + ' ' + '(' + ssn + ')' + "\n"
+	//+ placeDob + '\n' + address; 
 	//String.format("%s\n%s\n%s, %s%s", firstNames, lastNames, ssn, placeDob, address);
 	
 }
