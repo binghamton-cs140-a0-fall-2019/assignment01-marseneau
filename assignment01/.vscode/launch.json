@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PersonTester",
+            "request": "launch",
+            "mainClass": "PersonTester"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PlaceDOBTester",
+            "request": "launch",
+            "mainClass": "assignment01.PlaceDOBTester"
+        }
+    ]
+}

@@ -62,7 +62,18 @@ public class Person {
 		return String.format("%03d-%02d-%04d", ssn/1000000,ssn%1000000/10000, ssn%10000); 
 
 	}
-// TODO provide the getter methods for placeDob and address 
+// TODO provide the getter methods for placeDob and address
+	//Get methods for address and place/DOB
+	public DateAndPlaceOfBirth getPlaceDOB()
+	{
+		return placeDob;
+	}
+
+	public StreetUSAddress getAddress()
+	{
+		return address;
+	}
+
 // TODO Override the public String toString() method that is similar to the 
 // toString of the StreetUSAddress class and will print a person as:
 // Jane Doe (111-22-3333), 
@@ -70,4 +81,11 @@ public class Person {
 // 123 Main Street
 // Apt 1B
 // Binghamton, NY 13905
+@Override
+public String toString() {
+	return firstNames + ' ' + lastNames + ' ' + '(' + ssn + ')' + "\n"
+	+ placeDob + '\n' + address; 
+	//String.format("%s\n%s\n%s, %s%s", firstNames, lastNames, ssn, placeDob, address);
+	
+}
 }

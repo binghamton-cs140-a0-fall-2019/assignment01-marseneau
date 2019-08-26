@@ -14,7 +14,6 @@ public class StreetUSAddress {
 	public StreetUSAddress(String address1, 
 			String address2, String cty, 
 			String state, String zip) {
-      //TODO use the parameters to set the values of 
 	  //the fields above
 	  addressLine1 = address1;
 	  addressLine2 = address2;
@@ -27,7 +26,6 @@ public class StreetUSAddress {
 	 * @return
 	 */
 	public String getAddressLine1() {
-	// TODO return the appropriate String
 		return addressLine1;
 	}
 	/**
@@ -35,7 +33,6 @@ public class StreetUSAddress {
 	 * @return
 	 */
 	public String getAddressLine2() {
-	// TODO return the appropriate String
 		return addressLine2;
 	}
 	/**
@@ -43,7 +40,6 @@ public class StreetUSAddress {
 	 * @return
 	 */
 	public String getCity() {
-	// TODO return the appropriate String
 		return city;
 	}
 	/**
@@ -51,7 +47,6 @@ public class StreetUSAddress {
 	 * @return
 	 */
 	public String getStateAbbreviation() {
-	// TODO return the appropriate String
 		return stateAbbreviation;
 	}
 	/**
@@ -59,7 +54,6 @@ public class StreetUSAddress {
 	 * @return
 	 */	
 	public String getZipCode() {
-	// TODO return the appropriate String
 		return zipCode;
 	}
 	@Override

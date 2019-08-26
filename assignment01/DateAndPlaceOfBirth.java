@@ -1,6 +1,5 @@
 package assignment01;
 import java.time.LocalDate;
-//test
 /**
  * Class to store a data and place of birth.
  * @author CS 140
@@ -107,7 +106,24 @@ public class DateAndPlaceOfBirth {
 	 * the same day and month as the date of birth of other and false otherwise
 	 */
 	public boolean hasSameBirthDayAs(DateAndPlaceOfBirth other) {
-  //TODO complete this method
+		//If the months are equal, test the days
+  		if (dateOfBirth.getMonthValue() == other.dateOfBirth.getMonthValue())
+  		{
+			//If the days are equal, the birthday must be on the same day
+			if (dateOfBirth.getDayOfMonth() == other.dateOfBirth.getDayOfMonth())
+			{
+				return true;
+			}
+			//Otherwise, the birthdays are not equal
+			else
+			{
+				return false;
+			}
+  		}
+  		else
+  		{
+	  		return false;
+  		}
   }
 	@Override
 	public String toString() {

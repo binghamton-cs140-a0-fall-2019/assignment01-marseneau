@@ -4,3 +4,98 @@ Dell, Intel i5, 8GB Memory, 2.0TB Solid State Drive, Price: $700.00
 Dell, Intel i3, 8GB Memory, 2.0TB Hard Drive, Price: $500.00 
 Lenovo, Intel i3, 8GB Memory, 500GB Solid State Drive, Price: $450.00 
 Lenovo, Intel i5, 8GB Memory, 500GB Hard Drive, Price: $600.00 
+
+
+
+TESTS FOR DateAndPlaceOfBirth.java:
+Person date and place of birth information:
+Date and place of birth: 1999-01-13, Belgrade, Serbia
+Date and place of birth: 1999-01-13, Gary, Indiana, United States
+Date and place of birth: 1983-01-13, Sacramento, California, United States
+Date and place of birth: 1992-04-15, Berlin, Germany
+Date and place of birth: 1984-11-03, Rochester, New York, United States
+
+
+Test for hasSameBirthDateAs:
+true
+false
+false
+true
+false
+
+
+Test for olderThan:
+false
+false
+true
+true
+false
+false
+
+
+Test for youngerThan:
+false
+true
+false
+false
+true
+true
+
+
+Test for hasSameBirthdayAs:
+true
+true
+false
+false
+false
+
+TESTS FOR StreetUSAddress.java:
+230 Anderson Street
+Fort Collins, CO 80521
+
+
+125 Main Street
+Apartment 7
+Whitney Point, NY 13862
+
+TESTS FOR DateAndPlaceOfBirth.java:
+Person date and place of birth information:
+Date and place of birth: 1999-01-13, Belgrade, Serbia
+Date and place of birth: 1999-01-13, Gary, Indiana, United States
+Date and place of birth: 1983-01-13, Sacramento, California, United States
+Date and place of birth: 1992-04-15, Berlin, Germany
+Date and place of birth: 1984-11-03, Rochester, New York, United States
+
+
+Test for hasSameBirthDateAs:
+true
+false
+false
+true
+false
+
+
+Test for olderThan:
+false
+false
+true
+true
+false
+false
+
+
+Test for youngerThan:
+false
+true
+false
+false
+true
+true
+
+
+Test for hasSameBirthdayAs:
+true
+true
+false
+false
+false

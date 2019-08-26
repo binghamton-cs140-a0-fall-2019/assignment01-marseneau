@@ -1,9 +1,10 @@
 package assignment01;
 import java.io.File;
-import java.io.FileNotFoundException;;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
 
+//Import the computer class
 import assignment01.Computer;
 
 public class ComputerTester {
